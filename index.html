@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,60 @@
      <link rel="stylesheet" href="styles/style.css">
      <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="">
+    <!-- NavBar -->
+    <nav class="container mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+              </div>
+              <a class="font-raleway font-extrabold text-2xl">Paribahan</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+                
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn bg-[#1DD1001A] text-xl font-raleway text-green-400 lg:w-[130px]">Bus <img src="images/bus-icon.png" alt=""></a>
+            </div>
+          </div>
+    </nav>
+     
+    <header class="container mx-auto">
+
+        <div class="mx-2 mt-2">
+            <div class="hero h-[250px] lg:h-[550px]  rounded-3xl main-head">
+                <div class="hero-overlay rounded-3xl"></div>
+                <div class="hero-content h-[250px] lg:h-[550px] text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-6xl font-bold">Travel with<br><span class="text-green-600">P Paribahan</span> </h1>
+                    <p class="mb-5">Your trusted companion for safe and comfortable bus journeys across Bangladesh.</p>
+                    <button class="btn bg-green-500 text-black border-none">Buy Tickets</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        
+        
+    </header>
+    <main class="container mx-auto">
+       
+          
+    </main>
     
 </body>
 <script src="scripts/main.js"></script>
