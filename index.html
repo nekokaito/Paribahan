@@ -263,18 +263,18 @@
                 <hr class="mx-4" />
                 <div class="bg-[#F7F8F8] p-6 flex justify-between">
                   <h1>Total Price</h1>
-                  <h1>BDT <span id="">0</span></h1>
+                  <h1>BDT <span id="total">0</span></h1>
                 </div>
                 <div id="" class="bg-[#F7F8F8] px-6 pb-6 flex justify-between">
-                  <div class="w-full flex">
+                  <div id="coupon-claim" class="w-full flex">
                     <input
-                      id="coupon-field"
+                      id="coupon-input"
                       type="text"
                       class="w-full px-4 py-2 border rounded-l-lg focus:outline-none border-none"
                       placeholder="Have any coupon?"
                     />
-                    <button onclick="" disabled
-                      id="coupon-btn"
+                    <button onclick="couponClick()"
+                      id="coupon"
                       class="btn bg-green-500 rounded-l-none text-white"
                       disabled
                     >
@@ -308,7 +308,7 @@
                 <button
                   onclick=""
                   id=""
-                  class="btn w-full mt-4 bg-[#1DD100] text-white"
+                  class="btn w-full mt-4 bg-green-600 text-white"
                   disabled
                 >
                   Next
@@ -378,4 +378,5 @@
     
 </body>
 <script src="scripts/main.js"></script>
+<script src="scripts/click.js"></script>
 </html>

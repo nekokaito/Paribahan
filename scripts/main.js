@@ -1,44 +1,45 @@
-function Click(Id, call) {
-    document.getElementById(Id).addEventListener('click', call);
-  }
- 
-   let count = 0;
-     
-   function btnCount() {
+let count = 0;
+const GrandTotal = document.getElementById('grand-total');
+const Total = document.getElementById('total');
+
+function btnCount() {
      count++;
      document.getElementById('countDisplay').textContent = count;
 }
  function calcValue() {
     let countText = document.getElementById('countDisplay');
-     let count = parseInt(countText.textContent);
+    let count = parseInt(countText.textContent);
     let sum = 550 * count;
     if (count === 4) {
         const seatDiv = document.getElementById('seat-button');
         seatDiv.classList.add("pointer-events-none");
+        coupon.removeAttribute("disabled");
+        
     }
+    Total.innerText = sum;
+    GrandTotal.innerText = sum;
 
  }
-  
+ function couponClick() {
+    let Total = 0;
+    const couponInput = document.getElementById('coupon-input').value;
+    const claim = document.getElementById('coupon-claim');
+    if (couponInput === "NEW15") {
+        Total = 2200 - 330;
+        GrandTotal.innerText = Total;
+        claim.classList.add('hidden');
 
+    }
+    else if (couponInput === "Couple 20") {
+        Total = 2200 - 440;
+        GrandTotal.innerText = Total;
+        claim.classList.add('hidden');
+    }
+    else {
+        alert('Invalid');
+    }
+ }
 
-   
-
-Click('a1', function() {
-    btnCount(); // Increment count and update display when a1 is clicked
-    calcValue(); // Recalculate sum after each button click
-});
-Click('a2', function() {
-    btnCount(); // Increment count and update display when a2 is clicked
-    calcValue(); // Recalculate sum after each button click
-});
-Click('a3', function() {
-    btnCount(); // Increment count and update display when a3 is clicked
-    calcValue(); // Recalculate sum after each button click
-});
-Click('a4', function() {
-    btnCount(); // Increment count and update display when a4 is clicked
-    calcValue(); // Recalculate sum after each button click
-});
    
  
   
