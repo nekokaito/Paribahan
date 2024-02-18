@@ -195,7 +195,7 @@
               </div>
               <hr class="my-6 border-dashed" />
               <!-- seat -->
-              <div id="seat-area" class="flex flex-col gap-6 justify-center">
+              <div id="seat-button" class="flex flex-col gap-6 justify-center">
                 <!-- driver -->
                 <div class="flex justify-end gap-6 lg:relative lg:right-[230px]">
                   <button
@@ -206,16 +206,16 @@
                 </div>
                 <!-- seat A -->
                 <div class="flex items-center gap-6 justify-center">
-                  <h6 class="lg:min-w-8">A</h6>
-                  <button class="btn lg:min-w-20">A1</button>
-                  <button class=" btn lg:min-w-20">A2</button>
+                  <h6 class="lg:min-w-8 hidden lg:block">A</h6>
+                  <button id="a1" class="btn lg:min-w-20">A1</button>
+                  <button id="a2" class=" btn lg:min-w-20">A2</button>
                   <br />
-                  <button class=" btn lg:min-w-20">A3</button>
-                  <button class="  btn lg:min-w-20">A4</button>
+                  <button id="a3" class=" btn lg:min-w-20">A3</button>
+                  <button id="a4" class="  btn lg:min-w-20">A4</button>
                 </div>
                 <!-- seat B -->
                 <div class="flex items-center gap-6 justify-center">
-                  <h6 class="lg:min-w-8">B</h6>
+                  <h6 class="lg:min-w-8 hidden lg:block">B</h6>
                   <button class=" btn lg:min-w-20">B1</button>
                   <button class="btn lg:min-w-20">B2</button>
                   <br />
@@ -224,7 +224,7 @@
                 </div>
                 <!-- seat c -->
                 <div class="flex items-center gap-6 justify-center">
-                  <h6 class="lg:min-w-8">C</h6>
+                  <h6 class="lg:min-w-8 hidden lg:block">C</h6>
                   <button class=" btn lg:min-w-20">C1</button>
                   <button class=" btn lg:min-w-20">C2</button>
                   <br />
@@ -234,7 +234,7 @@
          
               </div>
             </div>
-            <!-- calc -->
+            <!-- calcValue -->
             <div class="w-full lg:w-[30%] px-8 mt-8 lg:mt-0">
               <h1 class="font-bold text-left text-2xl">Total Cost</h1>
               <hr class="my-6" />
@@ -244,8 +244,8 @@
                     <h1 class="font-bold">
                       Seat
                       <span
-                        id=""
-                        class="px-1 bg-[#1DD100] rounded-full text-white"
+                        id="countDisplay"
+                        class="px-1 bg-green-500 rounded-full text-white"
                         >0</span
                       >
                     </h1>
