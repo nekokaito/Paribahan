@@ -4,6 +4,7 @@ function Click(Id, call) {
   function addColor (Id) {
     const me = document.getElementById(Id);
     me.classList.add('bg-green-500');
+    me.classList.add ('text-white')
     me.classList.add("pointer-events-none");
   }
 //  A Seats
