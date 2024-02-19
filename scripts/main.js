@@ -11,6 +11,21 @@ function ticketLeft () {
    
     
 }
+function ticketList(seatName) {
+    const seat = document.getElementById('seat-container');
+    const className = document.getElementById('class');
+    const price = document.getElementById('price');
+    const s = document.createElement("p");
+    const c = document.createElement("p");
+    const p = document.createElement("p");
+    s.innerText = seatName;
+    c.innerText = 'Economy';
+    p.innerText = '550';
+    seat.appendChild(s);
+    className.appendChild(c);
+    price.appendChild(p);
+
+}
 
 function btnCount() {
      count++;
@@ -38,12 +53,14 @@ function btnCount() {
         Total = 2200 - 330;
         GrandTotal.innerText = Total;
         claim.classList.add('hidden');
+        my_modal_5.showModal();
 
     }
     else if (couponInput === "Couple 20") {
         Total = 2200 - 440;
         GrandTotal.innerText = Total;
         claim.classList.add('hidden');
+        my_modal_5.showModal();
     }
     else {
         my_modal_1.showModal();

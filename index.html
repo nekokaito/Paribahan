@@ -216,20 +216,20 @@
                 <!-- seat B -->
                 <div class="flex items-center gap-6 justify-center">
                   <h6 class="lg:min-w-8 hidden lg:block">B</h6>
-                  <button class=" btn lg:min-w-20">B1</button>
-                  <button class="btn lg:min-w-20">B2</button>
-                  <br />
-                  <button class=" btn lg:min-w-20">B3</button>
-                  <button class=" btn lg:min-w-20">B4</button>
+                  <button id="b1" class=" btn lg:min-w-20">B1</button>
+                  <button id="b2" class="btn lg:min-w-20">B2</button>
+                  <br /> 
+                  <button id="b3" class=" btn lg:min-w-20">B3</button>
+                  <button id="b4" class=" btn lg:min-w-20">B4</button>
                 </div>
                 <!-- seat c -->
                 <div class="flex items-center gap-6 justify-center">
                   <h6 class="lg:min-w-8 hidden lg:block">C</h6>
-                  <button class=" btn lg:min-w-20">C1</button>
-                  <button class=" btn lg:min-w-20">C2</button>
+                  <button id="c1" class=" btn lg:min-w-20">C1</button>
+                  <button id="c2" class=" btn lg:min-w-20">C2</button>
                   <br />
-                  <button class=" btn lg:min-w-20">C3</button>
-                  <button class=" btn lg:min-w-20">C4</button>
+                 <button id="c3" class=" btn lg:min-w-20">C3</button>
+                  <button id="c4" class=" btn lg:min-w-20">C4</button>
                 </div>
          
               </div>
@@ -251,11 +251,11 @@
                     </h1>
                     <hr class="border-dashed border-[#03071233] my-1" />
                   </div>
-                  <div id="" class="text-left">
+                  <div id="class" class="text-left">
                     <h1 class="font-bold">Class</h1>
                     <hr class="border-dashed border-[#03071233] my-1" />
                   </div>
-                  <div id="" class="text-left">
+                  <div id="price" class="text-left">
                     <h1 class="font-bold">Price</h1>
                     <hr class="border-dashed border-[#03071233] my-1" />
                   </div>
@@ -342,6 +342,20 @@
                     </div>
                   </div>
                 </dialog>
+                <!-- Open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg">Congratulations!</h3>
+    <p class="py-4">You got discount form the coupon.</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
                 <div class="mt-4 flex justify-between underline">
                   <a href="">Terms and Conditions</a>
                   <a href="">Cancellation Policy</a>
