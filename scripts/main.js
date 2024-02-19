@@ -2,6 +2,7 @@ let count = 0;
 const GrandTotal = document.getElementById('grand-total');
 const Total = document.getElementById('total');
 const Ticket = document.getElementById('ticket-left');
+const phone = document.getElementById('phone-text');
 
 function ticketLeft () {
    const domTicket = parseInt(Ticket.textContent);
@@ -45,9 +46,27 @@ function btnCount() {
         claim.classList.add('hidden');
     }
     else {
-        alert('Invalid');
+        my_modal_1.showModal();
     }
  }
+
+
+
+ function phnTextBtn() {
+    
+    const value = phone.value;
+    const nextBtn = document.getElementById('next-btn');
+    if (value.length >= 1 && count >= 1) {
+        nextBtn.disabled = false;
+    }
+    else {
+        nextBtn.disabled = true;
+    }
+
+ }
+ phone.addEventListener("input", phnTextBtn);
+
+ 
 
 function dialogClose() {
     reload();

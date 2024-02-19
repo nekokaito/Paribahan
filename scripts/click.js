@@ -4,6 +4,7 @@ function Click(Id, call) {
   function addColor (Id) {
     const me = document.getElementById(Id);
     me.classList.add('bg-green-500');
+    me.classList.add("pointer-events-none");
   }
 
 Click('a1', function() {
@@ -11,6 +12,7 @@ Click('a1', function() {
     btnCount(); 
     calcValue(); 
     ticketLeft (); 
+    
 });
 Click('a2', function() {
     addColor('a2');
