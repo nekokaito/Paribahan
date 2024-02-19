@@ -1,6 +1,15 @@
 let count = 0;
 const GrandTotal = document.getElementById('grand-total');
 const Total = document.getElementById('total');
+const Ticket = document.getElementById('ticket-left');
+
+function ticketLeft () {
+   const domTicket = parseInt(Ticket.textContent);
+   let left = domTicket - 1;
+   Ticket.innerText = left;
+   console.log(left);
+    
+}
 
 function btnCount() {
      count++;
