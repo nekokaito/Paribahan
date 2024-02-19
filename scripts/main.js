@@ -7,7 +7,7 @@ function ticketLeft () {
    const domTicket = parseInt(Ticket.textContent);
    let left = domTicket - 1;
    Ticket.innerText = left;
-   console.log(left);
+   
     
 }
 
@@ -48,6 +48,10 @@ function btnCount() {
         alert('Invalid');
     }
  }
+
+function dialogClose() {
+    reload();
+}
 
    
  
